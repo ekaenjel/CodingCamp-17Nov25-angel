@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <!-- Header Content  -->
+    <header class="main-header P-[8px] flex justify-between items-center">
+        <!-- Logo Icon -->
+        <div class="logo-icon"></div>
+        
+        <!-- Navigation Menu -->
+        <nav class="flex">
+            <a class="border p-[4px]" href="#home-page">Home</a>
+            <a class="border p-[4px]" href="#my-profile-page">About Me</a>
+            <a class="border p-[4px]" href="#portfolio-page">Portfolio</a>
+            <a class="border p-[4px]" href="#message-me-page">Message Me</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="min-h-[500px] text-center content-center bg-purple-100 py-16">
+            <h2 class="text-4xl font-bold" id="welcome-speech">Welcome to My Website</h2>
+            <p class="text-lg text-gray-700">Discover my journey, my works, and the things I build with heart.</p>
+        </section>
+
+        <hr />
+        <!-- My Profile Page -->
+        <section id="my-profile-page" class="min-h-[500px] text-center px-2 content-center bg-purple-100 py-16">
+            <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold">About Me</h2>
+
+            <p class="mt-4 text-center bg-purple-300 p-4 rounded-xl">
+            Hi! I'm Eka Angelia Yustina, I am a recent graduate from the State Polytechnic of Madiun with a Diploma in Computer Control Engineering. 
+            I have an interest in the Internet of Things (IoT), programming, and user interface design. I have completed an internship at PT Industri Kereta Api (INKA) Persero, 
+            which provided me with hands-on experience in the industrial sector, particularly in the application of technology and problem-solving in a real-world work environment. 
+            I am capable of working independently or as part of a team with strong communication skills, and I have a high level of enthusiasm for continuous learning to further 
+            develop my knowledge and skills in the field of technology and innovation. Outside of my professional interests, I enjoy exploring new technologies, reading about the 
+            latest trends in tech, and engaging in creative projects that allow me to express myself.
+        </p>
+        </section>
+
+        <hr />
+        
+        <!-- Portfolio Page -->
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center bg-purple-100 py-16">
+            <h2 class="text-4xl font-bold">Portfolio</h2>
+            <p class="text-lg text-gray-700 mt-4 mb-10">
+        Here are some of my best works and projects, showcasing my passion for design and commitment to quality.
+    </p>
+
+        <div class="portfolio-grid mt-6">
+        <div class="card">
+            <img src="indikator.jpg" alt="">
+            <h3>Project Alat indikator Banjir</h3>
+        </div>
+
+        <div class="card">
+            <img src="akuarium.jpg" alt="">
+            <h3>Project Sistem Pemantauan Kualitas Air pada Akuarium</h3>
+        </div>
+
+        <div class="card">
+            <img src="plant.jpg" alt="">
+            <h3>Project Monitoring and Automatic Plant Watering System Berbasis IoT</h3>
+        </div>
+
+        <div class="card">
+            <img src="monitor.jpg" alt="">
+            <h3>Project Perancangan GUI Raspberry Pi Untuk Kunci Brankas Berbasis Face Recognition</h3>
+        </div>
+    </div>
+</section>
+
+        <hr />
+        
+        <!-- Message Me Page -->
+        <section id="message-me-page" class="min-h-[500px] text-center content-center bg-purple-100 py-16">
+            <h2 class="text-4xl font-bold">Message Me</h2>
+            <p class="text-lg text-gray-700 mt-4 mb-10">Feel free to reach out for collaborations or just a friendly hello!
+                Send me a message and I'll get back to you as soon as I can.</p>
+
+        <form id="message-form" class="max-w-md mx-auto p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="birthdate" class="block text-gray-700 font-bold mb-2">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" class="w-full px-3 py-2 border rounded-lg" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="subject" class="block text-gray-700 font-bold mb-2">Gender:</label>
+                <select id="subject" name="subject" class="w-full px-3 py-2 border rounded-lg" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded-lg" required></textarea>
+            </div>
+
+            <button type="submit" class="bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600">Send Message</button>
+        </form>   
+
+            <div id="output" class="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md text-left">
+                <p class="text-gray-500">Data yang kamu isi akan muncul di sini setelah submit.</p>
+            </div>
+         <section>
+
+    <!-- Footer Content -->
+    <footer>
+        <p>© 2025 Eka Angelia. All rights reserved.</p>
+    </footer>
+    
+</body>
+    <!-- Javascript External -->
+    <script src="js/script.js"></script>
+</html>
